@@ -1,0 +1,69 @@
+// calculate the loan payment for different banks like HDFC, ICICI, SBI etc. a real world example.
+
+
+// Step 1 
+
+             //We are going to create a Bank interface. 
+
+import java.io.*;      /*we are using io concept in our class that's why we are importing io pacakage.*/
+
+
+interface Bank
+{
+
+        String getBankName();
+
+}
+
+
+// Step 2 
+
+             //Create concrete classes that will implement the  Bank interface. 
+
+class HDFC implements Bank
+{
+
+         private final String BNAME;
+
+         public HDFC()
+        {
+                BNAME="HDFC BANK";
+        }
+
+    //  @override
+        public String getBankName()
+       {
+                  return BNAME;
+        
+       }
+
+}
+
+
+class ICICI implements Bank
+{
+
+         private final String BNAME;
+
+         public ICICI()
+        {
+                BNAME="ICICI BANK";
+        }
+
+    //  @override
+        public String getBankName()
+       {
+                  return BNAME;
+        
+       }
+
+}
+
+
+class SBI implements Bank
+{
+
+         private final String BNAME;
+
+         public SBI()
+        {
